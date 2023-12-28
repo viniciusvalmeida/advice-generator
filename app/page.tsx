@@ -24,7 +24,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<main className="bg-neutral-darkGrayishBlue p-12 rounded-xl flex flex-col justify-center items-center space-y-8 max-w-xl relative min-h-[20rem]">
+		<main className="bg-neutral-darkGrayishBlue px-4 md:px-12 rounded-xl flex flex-col justify-center items-center space-y-8 container md:max-w-xl relative min-h-[20rem]">
 			<span className="text-xs text-primary-neonGreen antialiased tracking-[.30rem]">
 				ADVICE #{advice?.slip.id}
 			</span>
@@ -34,14 +34,20 @@ export default function Home() {
 			</p>
 
 			<svg
-				className="mb-20"
-				width="444"
+				className="container"
 				height="16"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<g fill="none" fillRule="evenodd">
-					<path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
-					<g transform="translate(212)" fill="#CEE3E9">
+					<path
+						className="-translate-x-10 md:translate-x-4"
+						fill="#4F5D74"
+						d="M0 8h196v1H0zM248 8h196v1H248z"
+					/>
+					<g
+						className="translate-x-[170px] md:translate-x-[228px]"
+						fill="#CEE3E9"
+					>
 						<rect width="6" height="16" rx="3" />
 						<rect x="14" width="6" height="16" rx="3" />
 					</g>
